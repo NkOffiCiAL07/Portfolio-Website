@@ -10,6 +10,7 @@ import ParallaxComponent from "./components/Parallax/Parallax";
 import Technologies from "./components/Technologies/Technologies";
 import Playground from "./components/Playground/Playground";
 import Experience from "./components/Experience/Experience";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
@@ -29,3 +30,11 @@ function App() {
 }
 
 export default App;
+
+// function App() {
+//   return (
+//     <Modal />
+//   );
+// }
+
+// export default App;

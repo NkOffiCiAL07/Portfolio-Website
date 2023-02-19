@@ -24,13 +24,21 @@
     /* background gradient */
     color: black;
     height: 30vh;
+    width: 45vw;
     overflow-x: auto;
     border-radius: 10px;
     /* Border shadow yellow*/
-    box-shadow: 0 0 20px rgb(134, 67, 12);
+    box-shadow: 0 0 20px rgb(235, 231, 5);
     /* div shadow yellow*/
     padding: 0.5rem 0.5rem;
     background-color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.ExperienceContainerItem:hover{
+    background-color: rgb(206, 223, 222);
 }
 
 .ExperienceContainer{
@@ -51,4 +59,20 @@
     font-size: 1rem;
     font-weight: 600;
     margin: 0 0.5rem;
+}
+
+.ExperienceHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: rgb(99, 16, 95);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ExperienceContent{
+    padding-top: 1%;
+    font-size: 1rem;
+    color: rgb(16, 99, 60);
 }

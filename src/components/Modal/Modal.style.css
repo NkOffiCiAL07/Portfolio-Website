@@ -1,0 +1,29 @@
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    width: 40vw; /* Full width */
+    height: 80vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vw;
+    margin-right: 35vw;
+    margin-top: 1%;
+  }
+
+  .MessageBox{
+    height: 10vh;
+    width: 100%;
+    width: auto;
+  }
+
+  .SendButton{
+    background-color: #280cc7d5;
+    border: none;
+  }
+  

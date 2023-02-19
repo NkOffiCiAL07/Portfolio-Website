@@ -16,7 +16,7 @@ export const SectionTitle = styled.h2`
   font-weight: 800;
   text-transform: capitalize;
   z-index: 1;
-  color: gray;
+  color: black;
   display: inline-block;
 
   &::after {
@@ -25,7 +25,7 @@ export const SectionTitle = styled.h2`
     left: 5%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: grey;
+    color: black;
     opacity: 0.2;
     z-index: -1;
     font-size: 8rem;

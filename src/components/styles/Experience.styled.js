@@ -1,16 +1,12 @@
 import styled from "styled-components";
 
 export const StyledExperience = styled.section`
-  background: black;
+  background-color: gray;
   margin-top: -0.1rem;
   color: ${({ theme }) => theme.color.lightGray};
 `;
 
 export const ExperienceContent = styled.div`
-  display: flex;
-  gap: 5%;
-  margin-top: 6.5rem;
-
   @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     flex-direction: column;
     margin-top: 0;
