@@ -1,0 +1,24 @@
+.BirthDayCount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;   
+    /* Border Shadow */
+    box-shadow: 0 0 20px rgb(7, 7, 0);
+    width: 70vw;
+}
+
+.BirthDayCount:hover{
+    background-color: rgb(213, 219, 207);
+}
+
+.BirthDayCountHeading{
+    margin: 1rem;
+    /* Text shadow */
+    text-shadow: 0 0 20px rgb(58, 58, 7);
+}

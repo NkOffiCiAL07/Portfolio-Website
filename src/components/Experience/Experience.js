@@ -31,7 +31,7 @@ const Experience = () => {
             <div className="ExperienceContainer"></div>
             <div className="ExperienceContainerItem">
               <div className="ExperienceHeading">
-                <h2>TruBeat <span className="ExperienceDuration"> [ Jan 2023 - feb 2023 ] </span></h2>
+                <h2> TruBeat <span className="ExperienceDuration"> [ Jan 2023 - feb 2023 ] </span></h2>
               </div>
               <div className="ExperienceContent">
               <ul>
@@ -47,7 +47,7 @@ const Experience = () => {
           <div className="ExperienceSection">
             <div className="ExperienceContainerItem">
               <div className="ExperienceHeading">
-              <h2>Siemens EDA <span className="ExperienceDuration"> [ June 2022 - Dec 2022 ] </span></h2>
+              <h2>Siemens EDA <span className="ExperienceDuration"> [ June 2022 - Dec 2022 ] [ Noida ]</span></h2>
               </div>
               <div className="ExperienceContent">
               <ul>

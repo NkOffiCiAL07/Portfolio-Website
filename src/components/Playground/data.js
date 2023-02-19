@@ -19,11 +19,11 @@ export const projectsData = [
     img: random,
   },
   {
-    id: 3,
-    projectName: "Birthday Countdown",
+    id: 4,
+    projectName: "yet to decide...",
     hasLink: true,
     liveLink: "https://github.com/nishant-19041",
-    img: countdown,
+    img: awwwards,
   },
   {
     id: 4,

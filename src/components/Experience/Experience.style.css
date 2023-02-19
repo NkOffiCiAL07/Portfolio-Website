@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* background-image: linear-gradient(to bottom, rgb(185, 136, 113), rgb(255, 255, 255)); */
 }
 
 .ExperienceSection{
@@ -28,17 +29,17 @@
     overflow-x: auto;
     border-radius: 10px;
     /* Border shadow yellow*/
-    box-shadow: 0 0 20px rgb(235, 231, 5);
-    /* div shadow yellow*/
+    box-shadow: 0 0 20px rgb(2, 2, 0);
     padding: 0.5rem 0.5rem;
-    background-color: white;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 400;
     color: gray;
+    padding-top: 10px;
+    /* Background-image gradien */
 }
 
 .ExperienceContainerItem:hover{
-    background-color: rgb(206, 223, 222);
+    background-color: rgb(195, 231, 203);
 }
 
 .ExperienceContainer{
@@ -69,10 +70,12 @@
     font-size: 1rem;
     color: rgb(99, 16, 95);
     font-family: 'Courier New', Courier, monospace;
+    /* Text shadow */
+    text-shadow: 0 0 20px rgb(58, 58, 7);
 }
 
 .ExperienceContent{
-    padding-top: 1%;
+    padding-top: 10px;
     font-size: 1rem;
     color: rgb(16, 99, 60);
 }
