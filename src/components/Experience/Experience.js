@@ -1,5 +1,5 @@
 import React from "react";
-import { RiFontSize } from "react-icons/ri";
+// import { RiFontSize } from "react-icons/ri";
 import {
   ExperienceContent,
   // AboutDetailsContainer,
