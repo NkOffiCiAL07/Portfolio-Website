@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledExperience = styled.section`
-  background-image: linear-gradient(to bottom, #000000, #BDFFFF 50%, #000000 100%);
+  background-color: lightgray;
 
   margin-top: -0.1rem;
   color: ${({ theme }) => theme.color.lightGray};
