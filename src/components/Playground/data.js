@@ -6,8 +6,8 @@ import awwwards from "../../assets/playground/awwwards.png";
 export const projectsData = [
   {
     id: 1,
-    projectName: "TruBeat",
-    liveLink: "https://github.com/nishant-19041",
+    projectName: "Tic-Tac-Toe",
+    liveLink: "https://github.com/NkOffiCiAL07/TIC-TAC-TOE-GAME",
     hasLink: true,
     img: dribble,
   },
@@ -17,19 +17,5 @@ export const projectsData = [
     liveLink: "https://github.com/nishant-19041",
     hasLink: true,
     img: random,
-  },
-  {
-    id: 4,
-    projectName: "yet to decide...",
-    hasLink: true,
-    liveLink: "https://github.com/nishant-19041",
-    img: awwwards,
-  },
-  {
-    id: 4,
-    projectName: "yet to decide...",
-    hasLink: true,
-    liveLink: "https://github.com/nishant-19041",
-    img: awwwards,
   },
 ];
