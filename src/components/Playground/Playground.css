@@ -8,15 +8,13 @@
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 600;   
-    /* Border Shadow */
-    box-shadow: 10px 10px 20px rgb(7, 7, 0);
     width: 70vw;
     font-family: 'Courier New', Courier, monospace;
-    background-color: lightcyan;
+    background-color: white;
 }
 
 .BirthDayCount:hover{
-    background-color: cyan;
+    background-color: rgb(218, 255, 227);
 }
 
 .BirthDayCountHeading{

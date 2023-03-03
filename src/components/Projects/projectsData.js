@@ -3,14 +3,6 @@ import {
   project1Mobile,
   project2Laptop,
   project2Mobile,
-  project3Laptop,
-  project3Mobile,
-  project4Laptop,
-  project4Mobile,
-  project5Laptop,
-  project5Mobile,
-  project6Laptop,
-  project6Mobile,
 } from "./projectImages";
 
 export const projectData = [

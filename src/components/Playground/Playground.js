@@ -15,7 +15,6 @@ const Playground = () => {
   let hour = today.getHours();
   let minute = today.getMinutes();
   let second = today.getSeconds();
-  let month =  Birthday.getMonth() - today.getMonth();
 
   const [seconds, setSeconds] = React.useState(second);
   const [minutes, setMinutes] = React.useState(minute);
@@ -61,7 +60,6 @@ const Playground = () => {
         <div className="BirthDayCount">
           <h2 className="BirthDayCountHeading">Birthday Countdown</h2>
             <p>
-              Month : {month} ,
               Day : {Difference_In_Days} ,
               Hour : {hours} , 
               Minutes : {minutes} ,

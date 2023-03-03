@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledExperience = styled.section`
-  background-color: lightgray;
+  background-color: white;
 
   margin-top: -0.1rem;
   color: ${({ theme }) => theme.color.lightGray};

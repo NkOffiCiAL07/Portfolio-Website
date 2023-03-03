@@ -7,14 +7,14 @@ export const projectsData = [
   {
     id: 1,
     projectName: "Tic-Tac-Toe",
-    liveLink: "https://github.com/NkOffiCiAL07/TIC-TAC-TOE-GAME",
+    Link: "https://github.com/NkOffiCiAL07/TIC-TAC-TOE-GAME",
     hasLink: true,
     img: dribble,
   },
   {
     id: 2,
     projectName: "Number Guessing Game",
-    liveLink: "https://github.com/nishant-19041",
+    Link: "https://github.com/NkOffiCiAL07/NumberGuessGame.github.io",
     hasLink: true,
     img: random,
   },
