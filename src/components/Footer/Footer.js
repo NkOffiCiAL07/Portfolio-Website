@@ -32,7 +32,7 @@ const Footer = () => {
 
       <FooterBigLinkContainer>
         <FooterBigLink
-          href="mailto:jerichobantiquete@gmail.com"
+          href="mailto:nishantkumar19041@gmail.com"
           data-hover="Let's talk!"
         >
           Need a developer?
@@ -41,13 +41,13 @@ const Footer = () => {
       <FooterContacts>
         <FooterContact>
           <ContactHeader>Call me</ContactHeader>
-          <ContactLink href="tel:+639951076206">+91 7033302909</ContactLink>
+          <ContactLink href="tel:+917033302909">+91 7033302909</ContactLink>
         </FooterContact>
         <FooterContact>
           <ContactHeader>Social</ContactHeader>{" "}
           <FooterSocials>
             <ContactLink
-              href="https://github.com/nishant-19041"
+              href="https://github.com/nkofficial07"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,7 +61,7 @@ const Footer = () => {
               LinkedIn
             </ContactLink>
             <ContactLink
-              href=""
+              href="https://www.instagram.com/nkofficial07/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,7 +86,7 @@ const Footer = () => {
         <small>
           &copy; Copyright {year},{" "}
           <Small
-            href="https://github.com/nishant-19041"
+            href="https://github.com/nkofficial07/"
             target="_blank"
             rel="Nishant Kumar"
           >

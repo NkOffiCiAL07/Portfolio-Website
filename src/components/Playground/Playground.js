@@ -42,7 +42,7 @@ const Playground = () => {
 
     }, 1000);
     return () => clearInterval(interval);
-  }, [seconds]);
+  }, [hours, minutes, seconds]);
 
   return (
     <StyledPlayground id="playground">

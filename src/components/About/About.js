@@ -28,10 +28,18 @@ const About = () => {
         </AboutImageContainer>
         <AboutDetailsContainer>
           <StyledParagraph>
-            My name is Nishant Kumar, currently pursuing Bachelor of
-            Technology in Mathematics and Computing at IITGoa. I
-            am a passionate front-end / Software developer based in India.
+          Hi, this is Nishant, a 23' graduate from Indian Institute of Technology, Goa, 
+          where I completed my Bachelor of Technology in Mathematics and Computing. 
+          I am an enthusiastic and dedicated front-end / Software developer with a strong passion for creating 
+          innovative solutions. 
           </StyledParagraph>
+          <StyledParagraph>
+          I am based in India and thrive on the challenges that come with developing 
+          cutting-edge applications and websites. 
+          I am constantly seeking opportunities to expand my knowledge and skills, and I am committed to delivering 
+          high-quality results in every project I undertake.
+          </StyledParagraph>
+          
           <StyledParagraph>
             I love to design and create responsive websites or web apps from
             scratch. The technologies, tools and languages I am using to build

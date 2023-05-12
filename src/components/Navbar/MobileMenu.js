@@ -39,7 +39,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
           Contact
         </MobileMenuLink>
         <MobileButton
-          href="nishantkumar19041@gmail.com "
+          href="mailto:nishantkumar19041@gmail.com "
           target="_blank"
           rel="Nishant Kumar"
         >

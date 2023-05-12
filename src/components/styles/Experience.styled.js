@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const StyledExperience = styled.section`
-  background-color: white;
+  /* set background color for the experience section if text color is black */
+  background-color: lightblue;
 
   margin-top: -0.1rem;
-  color: ${({ theme }) => theme.color.lightGray};
+  color: ${({ theme }) => theme.color.white};
 `;
 
 export const ExperienceContent = styled.div`
-  @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.white}) {
     flex-direction: column;
     margin-top: 0;
   }

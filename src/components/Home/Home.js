@@ -80,14 +80,14 @@ const Home = () => {
         </Greeting>
         <Socials>
           <Social
-            href="nishantkumar19041@gmail.com"
+            href="mailto:nishantkumar19041@gmail.com"
             target="_blank"
             rel="Nishant Kumar"
           >
             <FaEnvelope />
           </Social>
           <Social
-            href="https://github.com/nishant-19041"
+            href="https://github.com/NkOffiCiAL07"
             target="_blank"
             rel="Nishant Kumar"
           >

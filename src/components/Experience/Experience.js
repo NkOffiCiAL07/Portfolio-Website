@@ -31,13 +31,14 @@ const Experience = () => {
             <div className="ExperienceContainer"></div>
             <div className="ExperienceContainerItem">
               <div className="ExperienceHeading">
-                <h2> TruBeat <span className="ExperienceDuration"> [ Jan 2023 - feb 2023 ] </span></h2>
+                <h2> NxtWave <span className="ExperienceDuration"> [ Jun 2021 - July 2021 ] [ Hyderabad ] </span></h2>
               </div>
               <div className="ExperienceContent">
               <ul>
-                <li> - Building a music web application from scratch using HTML, CSS and React Js.</li>
-                <li> - Implementing responsive design to ensure optimal performance and user experience.</li>
-                <li> - Deployed it on Netlify to make it live and avail it for testing.</li>
+                <li> - Built various mini-projects using Machine Learning algorithms.</li>
+                <li> - Debugged a few ML algorithms and learnt Ensembling techniques to combine different algorithms.</li>
+                <li> - Learned multiple new algorithms and solved Machine Learning problems using Python.</li>
+                <li> - Analysed relevant data, estimated and derived results.</li>
               </ul>
               </div>
             </div>
@@ -62,13 +63,15 @@ const Experience = () => {
             <div className="ExperienceContainer"></div>
             <div className="ExperienceContainerItem">
             <div className="ExperienceHeading">
-            <h2>HousePredApp <span className="ExperienceDuration"> [ Sept 2022 - Oct 2022 ] </span></h2>
+            <h2> COVID-19 <span className="ExperienceDuration"> [ Apr 2020 - May 2020 ] [ IIT Goa ] </span></h2>
             </div>
             <div className="ExperienceContent">
             <ul>
-                <li> - Developed two advanced regression models such as Ridge and Lasso, to predict the house prices.</li>
-                <li> - Trained the model using the Ames Housing dataset from Kaggle and achieved an accuracy of 89%.</li>
-                <li> - Made an end-to-end flask web application and deployed it to Heroku.</li>
+                <li> - The main goal is to understand the basics of Epidemiology, its complexity and appreciate its complexity.</li>
+                <li> - Using Mathematical modelling and Coding, I tried to fit the COVID-19 data of Punjab, India, into a compartment model, SIR.
+</li>
+                <li> - Helps to understand, analyse, forecast, and estimate the prevailing Biological phenomena of the COVID-19 Epidemic.
+</li>
               </ul>
             </div>
             </div>

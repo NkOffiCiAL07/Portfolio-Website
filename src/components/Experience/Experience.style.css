@@ -39,7 +39,8 @@
 }
 
 .ExperienceContainerItem:hover{
-    background-color: rgb(195, 231, 203);
+    /* skylightblue */
+    background-image: linear-gradient(to bottom, rgb(243, 244, 247), rgb(235, 237, 240));
 }
 
 .ExperienceContainer{
@@ -75,6 +76,7 @@
 }
 
 .ExperienceContent{
+    font-family: 'Times New Roman', Times, serif;
     padding-top: 10px;
     font-size: 1rem;
     color: rgb(16, 99, 60);
