@@ -27,30 +27,32 @@ const About = () => {
           <AboutImage src={myImage} />
         </AboutImageContainer>
         <AboutDetailsContainer>
-          <StyledParagraph>
-          Hi, this is Nishant, a 23' graduate from Indian Institute of Technology, Goa, 
-          where I completed my Bachelor of Technology in Mathematics and Computing. 
-          I am an enthusiastic and dedicated front-end / Software developer with a strong passion for creating 
-          innovative solutions. 
-          </StyledParagraph>
-          <StyledParagraph>
-          I am based in India and thrive on the challenges that come with developing 
-          cutting-edge applications and websites. 
-          I am constantly seeking opportunities to expand my knowledge and skills, and I am committed to delivering 
-          high-quality results in every project I undertake.
-          </StyledParagraph>
-          
-          <StyledParagraph>
-            I love to design and create responsive websites or web apps from
-            scratch. The technologies, tools and languages I am using to build
-            my projects are HTML, CSS, JavaScript, REACT JS,
-            Bootstrap, Git and GitHub, Figma and VS Code.
-          </StyledParagraph>
-          <StyledParagraph>
-            I have eagerness to learn something new every day and I love to
-            share my knowledge to my fellow students and developers. And I am
-            looking forward to talk / connect with you!
-          </StyledParagraph>
+        <StyledParagraph>
+  Hi, I’m <span className="highlight">Nishant Kumar</span> — a Mathematics and Computing 
+  graduate from <span className="highlight">IIT Goa</span> (Class of 2023).
+</StyledParagraph>
+
+<StyledParagraph>
+  I’m a passionate <span className="highlight">Front-End & Software Developer</span> 
+  who enjoys building clean, intuitive, and scalable digital experiences. 
+  I care deeply about writing maintainable code, crafting thoughtful UI, 
+  and solving real-world problems through technology.
+</StyledParagraph>
+
+<StyledParagraph>
+  Based in India, I love working on challenging projects that push me to learn 
+  and grow every day. Whether it’s designing responsive interfaces or 
+  developing robust web applications, I always strive to deliver 
+  <span className="highlight"> high-quality, impactful solutions</span>.
+</StyledParagraph>
+
+<StyledParagraph>
+  I enjoy turning ideas into products from scratch and frequently work with 
+  HTML, CSS, JavaScript, React, Git, GitHub, Bootstrap, Figma, and VS Code. 
+  I’m always curious, always learning, and always excited to collaborate 
+  and connect.
+</StyledParagraph>
+
           <Resume>
             <ResumeLink
               // href={resume}

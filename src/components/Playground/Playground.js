@@ -20,8 +20,16 @@ const Playground = () => {
   const [minutes, setMinutes] = React.useState(minute);
   const [hours, setHours] = React.useState(hour);
 
-  var Difference_In_Time = Birthday.getTime() - today.getTime();
-  var Difference_In_Days = Math.round(Difference_In_Time / (1000 * 24 * 60 * 60));
+  let nextBirthday = new Date(Birthday);
+  nextBirthday.setFullYear(today.getFullYear());
+  
+  if (nextBirthday < today) {
+    nextBirthday.setFullYear(today.getFullYear() + 1);
+  }
+  
+  var Difference_In_Time = nextBirthday.getTime() - today.getTime();
+  var Difference_In_Days = Math.floor(Difference_In_Time / (1000 * 60 * 60 * 24));
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
