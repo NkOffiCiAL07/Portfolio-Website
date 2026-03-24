@@ -27,6 +27,7 @@ const Home = () => {
       <StyledHome id="home">
       <h2 className="name1 name2">Nishant Kumar</h2>
       <Title className="container animation"/>
+      <p className="company-tag">@ Siemens EDA</p>
         <p>
           I <span className="change-text"></span>{" "}
           <span className="responsive">r</span>

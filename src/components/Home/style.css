@@ -147,10 +147,10 @@ p span:nth-of-type(10) {
 }
 
 .animation {
-  height:10vh;
+  height: 3.5rem;
   margin-left: 1rem;
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 0.5rem;
 }
 
 .animation::before {
@@ -161,7 +161,34 @@ p span:nth-of-type(10) {
 
 @keyframes changed {
   50%{
-    content: "frontend Developer";
-    animation: change 8s;
+    content: "Frontend Developer";
+  }
+  100%{
+    content: "Software Engineer";
+  }
+}
+
+.company-tag {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  opacity: 0.6;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  animation: heroFadeUp 1s ease-out 0.5s both;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
