@@ -21,6 +21,14 @@ export const TechnologiesIcons = styled.div`
 
 export const TechnologyIcon = styled.img`
   height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(60%) brightness(0.85);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.15);
+    filter: grayscale(0%) brightness(1);
+  }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     height: 24px;

@@ -11,18 +11,32 @@ export const StyledNavbar = styled.nav`
   align-items: center;
   height: 7.5625rem;
   padding: 0 5rem;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 999;
   color: #fff;
+  animation: navSlideDown 0.6s ease-out;
+
+  @keyframes navSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   &.sticky {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
     height: 5.32875rem;
     z-index: 999;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -99,28 +113,21 @@ export const StyledCTA = styled.a`
   font-size: 0.625rem;
   letter-spacing: 0.1875rem;
   font-weight: 500;
-  transition: 0.3s ease;
+  color: #fff;
   text-transform: uppercase;
   padding: 0.8rem 1.5rem;
-  background: ${({ theme }) => theme.backgroundColor.darkGray};
+  background: ${({ theme }) => theme.backgroundColor.orange};
   transition: 0.3s ease;
   position: relative;
   overflow: hidden;
-
-  &::before,
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  z-index: 1;
 
   & span {
     display: flex;
     align-items: center;
     gap: 1rem;
     position: relative;
+    z-index: 2;
   }
 
   & > span {
@@ -152,13 +159,20 @@ export const StyledCTA = styled.a`
 
   &::before {
     content: "";
-    background: ${({ theme }) => theme.backgroundColor.orange};
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ${({ theme }) => theme.backgroundColor.darkGray};
     transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
     transform-origin: 100% 50%;
+    transform: scaleX(0);
+    z-index: -1;
   }
 
   &:hover::before {
-    transform: scale3d(0, 1, 1);
+    transform: scaleX(1);
     transform-origin: 0% 50%;
   }
 

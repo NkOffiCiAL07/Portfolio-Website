@@ -6,13 +6,16 @@ import {
   TechnologyIcon,
 } from "../styles/Technologies.styled";
 import { iconsData } from "./icons";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 const Technologies = () => {
-  return (
-    <TechnologiesContainer id="skills">
-      <TechnologiesHeader>Technologies I am familiar with</TechnologiesHeader>
+  const sectionRef = useScrollReveal();
 
-      <TechnologiesIcons>
+  return (
+    <TechnologiesContainer id="skills" ref={sectionRef}>
+      <TechnologiesHeader data-reveal>Technologies I am familiar with</TechnologiesHeader>
+
+      <TechnologiesIcons data-reveal data-reveal-delay="2">
         {iconsData.map((iconData) => {
           return (
             <TechnologyIcon

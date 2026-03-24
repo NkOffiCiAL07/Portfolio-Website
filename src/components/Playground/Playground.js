@@ -7,6 +7,7 @@ import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
 import { StyledParagraph } from "../styles/Typography.styled";
 import PlaygroundProjectComponent from "./PlaygroundProject";
 import { projectsData } from "./data";
+import useScrollReveal from "../../hooks/useScrollReveal";
 import "./Playground.css"
 
 const Playground = () => {
@@ -19,6 +20,7 @@ const Playground = () => {
   const [seconds, setSeconds] = React.useState(second);
   const [minutes, setMinutes] = React.useState(minute);
   const [hours, setHours] = React.useState(hour);
+  const sectionRef = useScrollReveal();
 
   let nextBirthday = new Date(Birthday);
   nextBirthday.setFullYear(today.getFullYear());
@@ -53,11 +55,11 @@ const Playground = () => {
   }, [hours, minutes, seconds]);
 
   return (
-    <StyledPlayground id="playground">
-      <SectionHeading>
+    <StyledPlayground id="playground" ref={sectionRef}>
+      <SectionHeading data-reveal>
         <SectionTitle number="04">Playground</SectionTitle>
       </SectionHeading>
-      <StyledParagraph dark="true" textAlign="center">
+      <StyledParagraph dark="true" textAlign="center" data-reveal data-reveal-delay="1">
         A collection of projects that I've created for practice and leisure.
       </StyledParagraph>
       <PlaygroundProjectContainer>

@@ -24,7 +24,7 @@ const PlaygroundProjectComponent = ({
           href={liveLink}
           hasLink={hasLink}
           target="_blank"
-          rel="Nishant Kumar"
+          rel="noopener noreferrer"
         >
           <PlaygroundImage src={img} />
         </PlaygroundProjectImageContainer>
@@ -35,7 +35,7 @@ const PlaygroundProjectComponent = ({
               href={liveLink}
               hasLink={hasLink}
               target="_blank"
-              rel="Nishant Kumar"
+              rel="noopener noreferrer"
             >
               View Live <LiveIcon />
             </PlayGroundProjectLive>

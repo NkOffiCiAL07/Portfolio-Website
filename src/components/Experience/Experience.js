@@ -1,25 +1,18 @@
 import React from "react";
-// import { RiFontSize } from "react-icons/ri";
 import {
   ExperienceContent,
-  // AboutDetailsContainer,
-  // AboutImage,
-  // AboutImageContainer,
-  // Resume,
-  // ResumeLink,
   StyledExperience,
 } from "../styles/Experience.styled";
 import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
-// import { StyledParagraph } from "../styles/Typography.styled";
-// import myImage from "../../assets/1.jpg";
-// import downloadIcon from "../../assets/icons/download-icon.svg";
-// import resume from "../../assets/resume.pdf";
+import useScrollReveal from "../../hooks/useScrollReveal";
 import "./Experience.style.css"
 
 const Experience = () => {
+  const sectionRef = useScrollReveal();
+
   return (
-    <StyledExperience id="experience">
-      <SectionHeading dark="true" mb="3rem">
+    <StyledExperience id="experience" ref={sectionRef}>
+      <SectionHeading dark="true" mb="3rem" data-reveal>
         <SectionTitle dark="true" number="02">
           Experience
         </SectionTitle>
@@ -29,16 +22,17 @@ const Experience = () => {
         <div className="ExperienceBody">
           <div className="ExperienceSection">
             <div className="ExperienceContainer"></div>
-            <div className="ExperienceContainerItem">
+            <div className="ExperienceContainerItem" data-reveal data-reveal-delay="1">
               <div className="ExperienceHeading">
-                <h2> NxtWave <span className="ExperienceDuration"> [ Jun 2021 - July 2021 ] [ Hyderabad ] </span></h2>
+                <h2> Senior Member of Technical Staff — Siemens EDA <span className="ExperienceDuration"> [ Jan 2024 - Present ] [ Noida ] </span></h2>
               </div>
               <div className="ExperienceContent">
               <ul>
-                <li> - Built various mini-projects using Machine Learning algorithms.</li>
-                <li> - Debugged a few ML algorithms and learnt Ensembling techniques to combine different algorithms.</li>
-                <li> - Learned multiple new algorithms and solved Machine Learning problems using Python.</li>
-                <li> - Analysed relevant data, estimated and derived results.</li>
+                <li> - Optimizing HDL Editing workflows within Tessent DFT toolchain, focusing on high-performance RTL parsing and elaboration for massive-scale designs.</li>
+                <li> - Resolved 50+ critical bugs involving HIE (Hierarchical Instance Expansion), structs, and complex signal connectivity in Verilog/VHDL.</li>
+                <li> - Automated RTL view validation across multiple synthesis streams, reducing manual verification time by 20%.</li>
+                <li> - Improved C++ memory efficiency and execution speed in HDLE modules by refactoring data structures and algorithms.</li>
+                <li> - Enhanced critical elaboration stages including type resolution, width computation, and assign de-compilation, ensuring 100% tool accuracy.</li>
               </ul>
               </div>
             </div>
@@ -46,32 +40,29 @@ const Experience = () => {
           </div>
           <div className="ExperienceBorder"></div>
           <div className="ExperienceSection">
-            <div className="ExperienceContainerItem">
+            <div className="ExperienceContainerItem" data-reveal data-reveal-delay="2">
               <div className="ExperienceHeading">
-              <h2>Siemens EDA <span className="ExperienceDuration"> [ June 2022 - Dec 2022 ] [ Noida ]</span></h2>
+              <h2>Data Scientist — Turtlemint <span className="ExperienceDuration"> [ Jul 2023 - Jan 2024 ] [ Pune ]</span></h2>
               </div>
               <div className="ExperienceContent">
               <ul>
-                <li> - Tested code for enhancing debug infrastructure using DFT tools.</li>
-                <li> - Wrote test-cases of TCL commands for verifying features of modification commands.</li>
-                <li> - Logged in HDLE API using C++ to get more insights on client's calls.</li>
-                <li> - Used Linux and gdb for managing and debugging c++ files.</li>
-                <li> - Implemented Oops concepts extensively in c++ to override different methods.</li>
+                <li> - Engineered end-to-end machine learning pipelines in Python, improving data cleaning speed by 15% via modular preprocessing scripts.</li>
+                <li> - Segmented 10,000+ POSPs using K-means clustering, enabling targeted advertising that lowered acquisition costs.</li>
+                <li> - Processed and analyzed large-scale datasets using PySpark and AWS (S3/EC2), facilitating data-driven decision making.</li>
+                <li> - Conducted A/B testing on marketing models to validate feature importance and model scalability.</li>
               </ul>
               </div>
             </div>
             <div className="ExperienceContainer"></div>
-            <div className="ExperienceContainerItem">
+            <div className="ExperienceContainerItem" data-reveal data-reveal-delay="3">
             <div className="ExperienceHeading">
-            <h2> COVID-19 <span className="ExperienceDuration"> [ Apr 2020 - May 2020 ] [ IIT Goa ] </span></h2>
+            <h2> Summer Intern — Siemens EDA <span className="ExperienceDuration"> [ Jun 2022 - Dec 2022 ] [ Noida ] </span></h2>
             </div>
             <div className="ExperienceContent">
             <ul>
-                <li> - The main goal is to understand the basics of Epidemiology, its complexity and appreciate its complexity.</li>
-                <li> - Using Mathematical modelling and Coding, I tried to fit the COVID-19 data of Punjab, India, into a compartment model, SIR.
-</li>
-                <li> - Helps to understand, analyse, forecast, and estimate the prevailing Biological phenomena of the COVID-19 Epidemic.
-</li>
+                <li> - Scaled debug infrastructure by developing TCL scripts for automated validation of modification commands.</li>
+                <li> - Leveraged GDB and Linux tools to perform deep-dive debugging of Object-Oriented C++ codebases.</li>
+                <li> - Documented system architecture and test coverage, identifying edge cases in netlist modification features.</li>
               </ul>
             </div>
             </div>

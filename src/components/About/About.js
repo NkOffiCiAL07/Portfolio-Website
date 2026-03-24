@@ -4,64 +4,65 @@ import {
   AboutDetailsContainer,
   AboutImage,
   AboutImageContainer,
-  Resume,
-  ResumeLink,
   StyledAbout,
 } from "../styles/About.styled";
 import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
 import { StyledParagraph } from "../styles/Typography.styled";
 import myImage from "../../assets/1.png";
-import downloadIcon from "../../assets/icons/download-icon.svg";
-// import resume from "../../assets/resume.pdf";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 const About = () => {
+  const sectionRef = useScrollReveal();
+
   return (
-    <StyledAbout id="about">
-      <SectionHeading dark="true" mb="3rem">
+    <StyledAbout id="about" ref={sectionRef}>
+      <SectionHeading dark="true" mb="3rem" data-reveal>
         <SectionTitle dark="true" number="01">
           About Me
         </SectionTitle>
       </SectionHeading>
       <AboutContent>
-        <AboutImageContainer>
-          <AboutImage src={myImage} />
+        <AboutImageContainer data-reveal="slide-left" data-reveal-delay="1">
+          <AboutImage src={myImage} alt="Nishant Kumar" loading="lazy" />
         </AboutImageContainer>
-        <AboutDetailsContainer>
-        <StyledParagraph>
-  Hi, I’m <span className="highlight">Nishant Kumar</span> — a Mathematics and Computing 
-  graduate from <span className="highlight">IIT Goa</span> (Class of 2023).
-</StyledParagraph>
+        <AboutDetailsContainer data-reveal="slide-right" data-reveal-delay="2">
+          <StyledParagraph>
+            Hi, I'm <span className="highlight">Nishant Kumar</span> — a B.Tech
+            graduate in Mathematics and Computing from{" "}
+            <span className="highlight">IIT Goa</span> (Class of 2023),
+            currently working as a{" "}
+            <span className="highlight">
+              Senior Member of Technical Staff at Siemens EDA
+            </span>.
+          </StyledParagraph>
 
-<StyledParagraph>
-  I’m a passionate <span className="highlight">Front-End & Software Developer</span> 
-  who enjoys building clean, intuitive, and scalable digital experiences. 
-  I care deeply about writing maintainable code, crafting thoughtful UI, 
-  and solving real-world problems through technology.
-</StyledParagraph>
+          <StyledParagraph>
+            I specialize in building{" "}
+            <span className="highlight">
+              high-performance software systems
+            </span>{" "}
+            — from optimizing RTL parsing engines in C++ to engineering machine
+            learning pipelines in Python. At Siemens, I've resolved 50+ critical
+            bugs in EDA toolchains and reduced manual verification time by 20%.
+          </StyledParagraph>
 
-<StyledParagraph>
-  Based in India, I love working on challenging projects that push me to learn 
-  and grow every day. Whether it’s designing responsive interfaces or 
-  developing robust web applications, I always strive to deliver 
-  <span className="highlight"> high-quality, impactful solutions</span>.
-</StyledParagraph>
+          <StyledParagraph>
+            Previously, I worked as a{" "}
+            <span className="highlight">Data Scientist at Turtlemint</span>,
+            where I segmented 10,000+ users using clustering algorithms and
+            built end-to-end ML pipelines with PySpark and AWS. I enjoy solving
+            complex problems across the full stack — whether it's low-level C++
+            optimization or crafting responsive UIs with React.
+          </StyledParagraph>
 
-<StyledParagraph>
-  I enjoy turning ideas into products from scratch and frequently work with 
-  HTML, CSS, JavaScript, React, Git, GitHub, Bootstrap, Figma, and VS Code. 
-  I’m always curious, always learning, and always excited to collaborate 
-  and connect.
-</StyledParagraph>
-
-          <Resume>
-            <ResumeLink
-              // href={resume}
-              icon={downloadIcon}
-              download="resume-jericho-bantiquete"
-            >
-              Download Resume
-            </ResumeLink>
-          </Resume>
+          <StyledParagraph>
+            My toolkit includes{" "}
+            <span className="highlight">
+              C++, Python, JavaScript, React, SQL, Verilog, PySpark, AWS, Git,
+              and Linux
+            </span>. I'm driven by curiosity, a bias for action, and a
+            commitment to writing clean, maintainable code.
+          </StyledParagraph>
         </AboutDetailsContainer>
       </AboutContent>
     </StyledAbout>

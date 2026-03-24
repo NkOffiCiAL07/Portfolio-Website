@@ -13,7 +13,7 @@ export const MobileMenuContainer = styled.div`
   background: ${({ theme }) => theme.backgroundColor.dark};
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  transition: 0.3s ease;
+  transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 `;
 
 export const Icon = styled.div`

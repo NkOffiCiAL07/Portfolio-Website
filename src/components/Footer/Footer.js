@@ -17,20 +17,22 @@ import {
   StyledFooter,
 } from "../styles/Footer.styled";
 import { animateScroll as scroll } from "react-scroll";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 const toTop = () => {
   scroll.scrollToTop({ delay: 0, duration: 0 });
 };
 
 const Footer = () => {
+  const sectionRef = useScrollReveal();
   const year = new Date().getFullYear();
   return (
-    <StyledFooter id="contact">
-      <FooterSmallTitleWrapper>
+    <StyledFooter id="contact" ref={sectionRef}>
+      <FooterSmallTitleWrapper data-reveal>
         <FooterSmallTitle>get in touch</FooterSmallTitle>
       </FooterSmallTitleWrapper>
 
-      <FooterBigLinkContainer>
+      <FooterBigLinkContainer data-reveal data-reveal-delay="1">
         <FooterBigLink
           href="mailto:nishantkumar19041@gmail.com"
           data-hover="Let's talk!"
@@ -71,7 +73,7 @@ const Footer = () => {
         </FooterContact>
         <FooterContact>
           <ContactHeader>Let's grab a coffee.</ContactHeader>
-          <ContactLink href="tel:+917033302909">
+          <ContactLink href="mailto:nishantkumar19041@gmail.com">
             nishantkumar19041@gmail.com
           </ContactLink>
         </FooterContact>
@@ -88,7 +90,7 @@ const Footer = () => {
           <Small
             href="https://github.com/nkofficial07/"
             target="_blank"
-            rel="Nishant Kumar"
+            rel="noopener noreferrer"
           >
             Nishant Kumar
           </Small>

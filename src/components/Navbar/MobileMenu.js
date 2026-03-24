@@ -39,29 +39,28 @@ const MobileMenu = ({ isOpen, toggle }) => {
           Contact
         </MobileMenuLink>
         <MobileButton
-          href="mailto:nishantkumar19041@gmail.com "
-          target="_blank"
-          rel="Nishant Kumar"
+          href={process.env.PUBLIC_URL + "/Nishant_Kumar_IITGoa_MNC.pdf"}
+          download="Nishant_Kumar_IITGoa_MNC.pdf"
         >
           <span>
             <span>
-              get in touch
+              Download Resume
             </span>
           </span>
         </MobileButton>
       </MobileMenuList>
       <MobileSocials>
         <MobileSocial
-          href="nishantkumar19041@gmail.com"
+          href="mailto:nishantkumar19041@gmail.com"
           target="_blank"
-          rel="Nishant Kumar"
+          rel="noopener noreferrer"
         >
           Gm
         </MobileSocial>
         <MobileSocial
           href="https://github.com/nishant-19041"
           target="_blank"
-          rel="Nishant Kumar"
+          rel="noopener noreferrer"
         >
           Gh
         </MobileSocial>
@@ -69,7 +68,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
         <MobileSocial
           href="https://www.linkedin.com/in/nishant-kumar-365395193/"
           target="_blank"
-          rel="Nishant Kumar"
+          rel="noopener noreferrer"
         >
           ln
         </MobileSocial>

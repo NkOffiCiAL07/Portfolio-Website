@@ -49,7 +49,7 @@ const Home = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-50}
           >
             <span>Projects</span>
@@ -64,7 +64,7 @@ const Home = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-50}
           >
             <span>About me</span>
@@ -82,21 +82,24 @@ const Home = () => {
           <Social
             href="mailto:nishantkumar19041@gmail.com"
             target="_blank"
-            rel="Nishant Kumar"
+            rel="noopener noreferrer"
+            aria-label="Email"
           >
             <FaEnvelope />
           </Social>
           <Social
             href="https://github.com/NkOffiCiAL07"
             target="_blank"
-            rel="Nishant Kumar"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <GoMarkGithub />
           </Social>
           <Social
             href="https://www.linkedin.com/in/nishant-kumar-365395193/"
             target="_blank"
-            rel="Nishant Kumar"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <GrLinkedinOption />
           </Social>

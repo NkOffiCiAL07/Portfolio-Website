@@ -11,10 +11,14 @@
     width: 70vw;
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
 .BirthDayCount:hover{
     background-color: rgb(218, 255, 227);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .BirthDayCountHeading{

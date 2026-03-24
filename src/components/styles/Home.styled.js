@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.section`
-  // background-color: ${({ theme }) => theme.backgroundColor.dark};
   background-color: black;
   color: ${({ theme }) => theme.color.lightGray};
   display: flex;
@@ -9,6 +8,20 @@ export const StyledHome = styled.section`
   justify-content: center;
   padding: 0 8rem;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(230, 78, 4, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     align-items: center;
@@ -20,6 +33,18 @@ export const Name = styled.h2`
   font-size: 2.1875rem;
   position: relative;
   color: #fff9f9;
+  animation: heroFadeUp 0.8s ease-out 0.2s both;
+
+  @keyframes heroFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 2.1875rem;
@@ -35,6 +60,7 @@ export const Title = styled.h1`
   font-weight: 700;
   margin: 0.5rem 0 2rem 0;
   color: #f7f7f7;
+  animation: heroFadeUp 0.9s ease-out 0.4s both;
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     text-align: center;
@@ -55,6 +81,18 @@ export const StyledButtonsContainer = styled.div`
   align-items: center;
   gap: 1rem;
   margin-top: 3rem;
+  animation: heroFadeUp 1s ease-out 0.6s both;
+
+  @keyframes heroFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `;
 
 export const Line = styled.hr`
@@ -65,11 +103,24 @@ export const Line = styled.hr`
   border: none;
   height: 0.125rem;
   border-radius: 2.8125rem;
+  animation: lineExpand 0.8s ease-out 1s both;
+
+  @keyframes lineExpand {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 5rem;
+      opacity: 1;
+    }
+  }
 `;
 
 export const Greeting = styled.p`
   position: absolute;
   bottom: 3rem;
+  animation: heroFadeUp 1s ease-out 1.1s both;
 `;
 
 export const Socials = styled.div`
@@ -79,6 +130,18 @@ export const Socials = styled.div`
   position: absolute;
   right: 5rem;
   bottom: 3rem;
+  animation: heroFadeUp 1.1s ease-out 0.8s both;
+
+  @keyframes heroFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     display: none;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   Line,
   Menu,
@@ -18,16 +18,14 @@ const Navbar = () => {
   const [stickyNav, setStickyNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Height
-  const stickyNavFunction = () => {
-    if (window.scrollY >= 510) {
-      setStickyNav(true);
-    } else {
-      setStickyNav(false);
-    }
-  };
+  const stickyNavFunction = useCallback(() => {
+    setStickyNav(window.scrollY >= 510);
+  }, []);
 
-  window.addEventListener("scroll", stickyNavFunction);
+  useEffect(() => {
+    window.addEventListener("scroll", stickyNavFunction);
+    return () => window.removeEventListener("scroll", stickyNavFunction);
+  }, [stickyNavFunction]);
 
   const toTop = () => {
     scroll.scrollToTop({ delay: 0, duration: 0 });
@@ -52,7 +50,7 @@ const Navbar = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-85.26}
           >
             Home
@@ -66,7 +64,7 @@ const Navbar = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-85.26}
           >
             About
@@ -80,10 +78,10 @@ const Navbar = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-85.26}
           >
-            experience
+            Experience
           </StyledNavLinks>
         </NavList>
         <NavList>
@@ -94,7 +92,7 @@ const Navbar = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-85.26}
           >
             Projects
@@ -109,7 +107,7 @@ const Navbar = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-85.26}
           >
             Skills
@@ -123,7 +121,7 @@ const Navbar = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-85.26}
           >
             Playground
@@ -137,7 +135,7 @@ const Navbar = () => {
             delay={0}
             spy={true}
             spyThrottle={0}
-            exact="true"
+            exact={true}
             offset={-85.26}
           >
             Contact
@@ -145,16 +143,17 @@ const Navbar = () => {
         </NavList>
       </NavMenuList>
       <StyledCTA
-        href="mailto:nishantkumar19041@gmail.com "
-        target="_blank"
-        rel="noreferrer"
+        href={process.env.PUBLIC_URL + "/Nishant_Kumar_IITGoa_MNC.pdf"}
+        download="Nishant_Kumar_IITGoa_MNC.pdf"
       >
         <span>
-          message me
+          <span>
+            Resume
+          </span>
         </span>
       </StyledCTA>
 
-      <Menu onClick={toggle}>
+      <Menu onClick={toggle} aria-label="Toggle mobile menu">
         <Line width="1.5rem" />
         <Line />
         <Line width="1.5rem" ml="0.5rem" />

@@ -1,18 +1,13 @@
 import styled from "styled-components";
 
 export const StyledExperience = styled.section`
-  /* set background color for the experience section if text color is black */
-  background-color: lightblue;
-
+  background-color: #f8f9fa;
   margin-top: -0.1rem;
-  color: ${({ theme }) => theme.color.white};
 `;
 
 export const ExperienceContent = styled.div`
-  @media all and (max-width: ${({ theme }) => theme.breakpoints.white}) {
-    flex-direction: column;
-    margin-top: 0;
-  }
+  max-width: 900px;
+  margin: 0 auto;
 `;
 
 export const AboutImageContainer = styled.div`

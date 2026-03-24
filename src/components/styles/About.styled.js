@@ -19,6 +19,8 @@ export const AboutImageContainer = styled.div`
   position: relative;
   width: 40%;
   margin-top: -8rem;
+  overflow: hidden;
+  border-radius: 4px;
 
   &::after {
     content: "";
@@ -52,6 +54,11 @@ export const AboutImage = styled.img`
   width: 100%;
   object-fit: cover;
   position: relative;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    transform: scale(1.03);
+  }
 `;
 
 export const AboutDetailsContainer = styled.div`
@@ -77,7 +84,7 @@ export const Resume = styled.div`
     bottom: -0.5rem;
     height: 1px;
     border-radius: 5px;
-    background: ${({ theme }) => theme.backgroundColor.light};
+    background: ${({ theme }) => theme.CTA.primary};
     width: 100%;
     transition: transform 0.3s ease;
     transform: scaleX(0);
@@ -95,7 +102,7 @@ export const Resume = styled.div`
 `;
 
 export const ResumeLink = styled.a`
-  color: #fff;
+  color: ${({ theme }) => theme.CTA.primary};
   letter-spacing: 2px;
   font-weight: 600;
   cursor: pointer;
